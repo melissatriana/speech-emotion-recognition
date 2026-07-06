@@ -1,0 +1,12 @@
+streamlit
+torch
+transformers
+librosa
+soundfile
+numpy
+scipy
+sentencepiece
+safetensors
+accelerate
+audioread
+soxr

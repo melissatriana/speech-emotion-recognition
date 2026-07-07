@@ -52,7 +52,7 @@ uploaded_file = st.file_uploader(
 )
 
 st.info(
-    "📁 Upload a **.wav** audio file (recommended: 16 kHz mono) to begin emotion prediction."
+    "📁 Upload a **.wav** audio file to begin emotion prediction."
 )
 
 # ==================================================

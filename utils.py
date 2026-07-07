@@ -21,9 +21,15 @@ id2label = {
     4:"Disappointed"
 }
 
-processor = Wav2Vec2Processor.from_pretrained(MODEL_PATH)
+processor = Wav2Vec2Processor.from_pretrained(
+    "melissatriana/speech-emotion-recognition",
+    subfolder="model"
+)
 
-model = Wav2Vec2ForSequenceClassification.from_pretrained(MODEL_PATH)
+model = Wav2Vec2ForSequenceClassification.from_pretrained(
+    "melissatriana/speech-emotion-recognition",
+    subfolder="model"
+)
 
 device = torch.device(
     "cuda" if torch.cuda.is_available() else "cpu"

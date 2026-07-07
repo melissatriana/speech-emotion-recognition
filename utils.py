@@ -7,7 +7,7 @@ from transformers import (
     Wav2Vec2ForSequenceClassification
 )
 
-MODEL_PATH = "./model"
+MODEL_PATH = "melissatriana/speech-emotion-recognition"
 
 TARGET_SR = 16000
 CHUNK_SEC = 3

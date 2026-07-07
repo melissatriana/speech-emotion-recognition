@@ -119,7 +119,7 @@ if uploaded_file is not None:
         # PROBABILITY
         # ==========================================
 
-        st.subheader("📊 Emotion Probability")
+        st.subheader("Emotion Probability")
 
         sorted_probs = sorted(
             probs.items(),
@@ -133,8 +133,8 @@ if uploaded_file is not None:
 
             st.progress(float(value))
 
-            st.caption(
-                f"{value*100:.2f}%"
+            st.markdown(
+                 f"### {value*100:.2f}%"
             )
 
         st.divider()

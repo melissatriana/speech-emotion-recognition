@@ -129,12 +129,13 @@ if uploaded_file is not None:
 
         for emo, value in sorted_probs:
 
-            st.write(f"**{EMOJI[emo]} {emo}**")
-
-            st.progress(float(value))
-
-            st.markdown(
-                 f"### {value*100:.2f}%"
-            )
-
-        st.divider()
+             col1, col2 = st.columns([5, 1]) 
+             with col1:
+                 st.write(f"**{EMOJI[emo]} {emo}**")
+             with col2:
+                 st.markdown(
+                     f"<h4 style='text-align:right; margin-top:0;'>{value*100:.2f}%</h4>",
+                     unsafe_allow_html=True
+                 )
+             st.progress(float(value))
+             st.write("")
